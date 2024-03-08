@@ -25,7 +25,7 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceFragment;
-import androidx.preference.SwitchPreference;
+import androidx.preference.SwitchPreferenceCompat;
 
 import com.android.settingslib.widget.MainSwitchPreference;
 
@@ -37,11 +37,11 @@ public class SamsungDozeSettings extends PreferenceFragment
 
     private MainSwitchPreference mSwitchBar;
 
-    private SwitchPreference mAlwaysOnDisplayPreference;
-    private SwitchPreference mHandwavePreference;
-    private SwitchPreference mPickUpPreference;
-    private SwitchPreference mPocketPreference;
-    private SwitchPreference mWakeOnGesturePreference;
+    private SwitchPreferenceCompat mAlwaysOnDisplayPreference;
+    private SwitchPreferenceCompat mHandwavePreference;
+    private SwitchPreferenceCompat mPickUpPreference;
+    private SwitchPreferenceCompat mPocketPreference;
+    private SwitchPreferenceCompat mWakeOnGesturePreference;
 
     private Handler mHandler = new Handler();
 
@@ -72,7 +72,7 @@ public class SamsungDozeSettings extends PreferenceFragment
         mPocketPreference.setEnabled(dozeEnabled);
         mPocketPreference.setOnPreferenceChangeListener(this);
 
-        mWakeOnGesturePreference = (SwitchPreference) findPreference(DozeUtils.WAKE_ON_GESTURE_KEY);
+        mWakeOnGesturePreference = (SwitchPreferenceCompat) findPreference(DozeUtils.WAKE_ON_GESTURE_KEY);
         mWakeOnGesturePreference.setEnabled(dozeEnabled);
         mWakeOnGesturePreference.setOnPreferenceChangeListener(this);
 
