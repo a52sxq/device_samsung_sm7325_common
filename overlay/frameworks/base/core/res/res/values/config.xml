@@ -1370,4 +1370,7 @@
          and one pSIM) -->
     <integer name="config_num_physical_slots">2</integer>
 
+    <!-- Boolean indicating if current platform supports BLE peripheral mode -->
+    <bool name="config_bluetooth_le_peripheral_mode_supported">true</bool>
+
 </resources>
