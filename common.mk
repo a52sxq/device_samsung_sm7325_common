@@ -184,6 +184,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SamsungDoze
 
+# SamsungDAP
+PRODUCT_PACKAGES += \
+    SamsungDAP
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
