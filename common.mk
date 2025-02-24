@@ -179,6 +179,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service \
     vendor.display.config@2.0.vendor
 
+# SamsungDAP
+PRODUCT_PACKAGES += \
+    SamsungDAP
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
