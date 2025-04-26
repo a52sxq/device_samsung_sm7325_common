@@ -579,6 +579,11 @@ on property:vold.decrypt=trigger_restart_framework
 on property:vendor.netflix.bsp_rev=*
     setprop ro.netflix.bsp_rev ${vendor.netflix.bsp_rev}
 
+on post-fs-data
+    # Charge Bypass
+    chown system system /sys/class/power_supply/battery
+    chmod 0660 /sys/class/power_supply/battery
+
 service vendor.qrtr-ns /vendor/bin/qrtr-ns -f
     class core
     user vendor_qrtr
