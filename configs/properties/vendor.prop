@@ -219,3 +219,7 @@ ro.vendor.vibrator_hal.tick_duration=40
 
 # Wifi
 wifi.aware.interface=wifi-aware0
+
+# HWUI
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
