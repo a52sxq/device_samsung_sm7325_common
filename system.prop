@@ -3,3 +3,7 @@ ro.vendor.qti.va_aosp.support=1
 
 # Netflix
 ro.netflix.bsp_rev=Q7325-SPY-33758-1
+
+# Blur
+ro.surface_flinger.supports_background_blur=1
+ro.sf.blurs_are_expensive=1
