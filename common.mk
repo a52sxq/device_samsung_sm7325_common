@@ -377,7 +377,8 @@ PRODUCT_SOONG_NAMESPACES += bootable/deprecated-ota
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.qti \
     init.qcom.usb.rc \
-    init.qcom.usb.sh
+    init.qcom.usb.sh \
+    NcmTetheringOverlay
 
 PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/usb/etc
 
