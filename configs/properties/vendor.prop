@@ -16,7 +16,6 @@ persist.vendor.audio.vbat.enabled=true
 persist.vendor.audio.bcl.enabled=true
 vendor.audio.tunnel.encode=false
 persist.vendor.audio.ras.enabled=false
-vendor.audio.offload.buffer.size.kb=32
 audio.offload.video=true
 vendor.audio.offload.track.enable=true
 audio.deep_buffer.media=true
@@ -69,6 +68,7 @@ vendor.audio.feature.maxx_audio.enable=false
 vendor.audio.feature.incall_music.enable=true
 vendor.audio.feature.audiozoom.enable=false
 ro.config.vc_call_vol_steps=8
+vendor.audio.offload.buffer.size.kb=256
 
 # Bluetooth
 ro.bluetooth.a2dp_offload.supported=true
