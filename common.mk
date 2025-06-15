@@ -113,6 +113,10 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl \
     android.hardware.bluetooth@1.0.vendor
 
+PRODUCT_PACKAGES += \
+    libldacBT_abr \
+    libldacBT_enc
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider-service.samsung \
