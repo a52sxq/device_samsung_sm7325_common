@@ -226,3 +226,6 @@ debug.hwui.target_cpu_time_percent=30
 
 # Incremental FS
 ro.incremental.enable=true
+
+# FS-verity
+ro.apk_verity.mode=2
