@@ -32,6 +32,9 @@ PRODUCT_TARGET_VNDK_VERSION := 30
 # No A/B
 AB_OTA_UPDATER := false
 
+# Setup dalvik vm configs
+$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := false
 
