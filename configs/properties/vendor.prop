@@ -127,6 +127,12 @@ dalvik.vm.heapstartsize=8m
 dalvik.vm.heaptargetutilization=0.75
 dalvik.vm.lockprof.threshold=500
 
+# Dex2oat
+dalvik.vm.dex2oat-cpu-set=6,7
+dalvik.vm.dex2oat-threads=2
+dalvik.vm.image-dex2oat-cpu-set=6,7
+dalvik.vm.image-dex2oat-threads=2
+
 # Display
 ro.hardware.vulkan=adreno
 ro.hardware.egl=adreno
