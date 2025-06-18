@@ -375,6 +375,9 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-ScopedWakelock.vendor \
     android.frameworks.sensorservice@1.0.vendor
 
+# Speed profile services
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0.vendor \
