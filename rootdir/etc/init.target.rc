@@ -173,6 +173,9 @@ on charger
     setprop sys.usb.controller a600000.dwc3
     setprop sys.usb.configfs 1
 
+    # Only owner can acces this node
+    chmod 440 /proc/net/unix
+
 #pd-mapper
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
