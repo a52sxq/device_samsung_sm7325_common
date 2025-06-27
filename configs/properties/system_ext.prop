@@ -1,5 +1,5 @@
 persist.vendor.dpm.feature=11
 
 # Dexopt
-pm.dexopt.first-boot=quicken
-pm.dexopt.bg-dexopt=everything
+pm.dexopt.first-boot=verify
+pm.dexopt.bg-dexopt=speed

@@ -413,7 +413,7 @@ PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor
 
 # Speed profile services
-PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
 # Thermal
