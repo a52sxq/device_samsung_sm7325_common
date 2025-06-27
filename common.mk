@@ -233,7 +233,8 @@ $(call soong_config_set,samsungVars,target_keymaster4_library,//vendor/samsung/s
 SPAMMY_LOG_TAGS_S  := \
     AppOps \
     QC2Buf \
-    QC2V4l2Codec
+    QC2V4l2Codec \
+    HWUI
 
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 PRODUCT_VENDOR_PROPERTIES += \
