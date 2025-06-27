@@ -190,15 +190,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
-# Lineage Health
-PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
-
-$(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/power_supply/battery/batt_slate_mode)
-$(call soong_config_set,lineage_health,charging_control_charging_enabled,0)
-$(call soong_config_set,lineage_health,charging_control_charging_disabled,1)
-$(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
-
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.samsung
@@ -240,34 +231,6 @@ $(call soong_config_set,samsungVars,target_keymaster4_library,//vendor/samsung/s
 
 # Logging
 SPAMMY_LOG_TAGS_S  := \
-    WifiHAL \
-    cnss-daemon \
-    sensors \
-    AudioDeviceInventory \
-    binder \
-    init \
-    libc \
-    NativeTombstoneManager \
-    kworker \
-    drm \
-    msm-dsi-info \
-    AppOps \
-    QC2Buf \
-    QC2V4l2Codec \
-    WindowManager \
-    BackgroundInstallControlService \
-    AppWidgetServiceImpl \
-    ShortcutService \
-    Telecom \
-    DisplayManagerService \
-    CompatChangeReporter \
-    FingerprintProvider \
-    ContextImpl \
-    JobScheduler \
-    netio \
-    GRIP \
-    ForegroundUtils \
-    ConstraintSet \
     HWUI
 
 ifneq ($(TARGET_BUILD_VARIANT),eng)
@@ -375,6 +338,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml \
     frameworks/native/data/etc/android.software.freeform_window_management.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.freeform_window_management.xml
+
+# Platform
+BOARD_USES_QCOM_HARDWARE := true
+PRODUCT_PLATFORM := lahaina
+TARGET_BOARD_PLATFORM := lahaina
 
 # Power
 PRODUCT_PACKAGES += \
