@@ -267,7 +267,8 @@ SPAMMY_LOG_TAGS_S  := \
     netio \
     GRIP \
     ForegroundUtils \
-    ConstraintSet
+    ConstraintSet \
+    HWUI
 
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 PRODUCT_VENDOR_PROPERTIES += \
