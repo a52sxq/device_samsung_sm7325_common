@@ -24,8 +24,6 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-PRODUCT_ENFORCE_RRO_TARGETS := *
-
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 30
 
@@ -327,6 +325,9 @@ endif
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf
+
+# Overlays
+PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Perf
 PRODUCT_PACKAGES += \
