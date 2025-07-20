@@ -174,7 +174,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@4.0.vendor \
     vendor.qti.hardware.memtrack-service \
     vendor.display.config@2.0.vendor \
-    hwcomposer.qcom
+    hwcomposer.qcom \
+    gralloc.qcom
 
 # SamsungDAP
 PRODUCT_PACKAGES += \
