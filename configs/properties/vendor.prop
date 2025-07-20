@@ -194,6 +194,9 @@ ro.vendor.extension_library=libqti-perfd-client.so
 # Power HAL
 vendor.powerhal.disp.idle_support=false
 
+# OEM Unlock
+ro.oem_unlock_supported=1
+
 # RIL
 vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
 persist.vendor.radio.atfwd.start=true
