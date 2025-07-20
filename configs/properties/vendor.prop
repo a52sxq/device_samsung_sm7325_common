@@ -126,6 +126,7 @@ dalvik.vm.image-dex2oat-cpu-set=6,7
 dalvik.vm.image-dex2oat-threads=2
 
 # Display
+debug.sf.auto_latch_unsignaled=true
 ro.hardware.vulkan=adreno
 ro.hardware.egl=adreno
 ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.lahaina.api30
