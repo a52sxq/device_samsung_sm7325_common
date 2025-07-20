@@ -164,7 +164,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     init.qti.display_boot.rc \
     init.qti.display_boot.sh \
-    gralloc.default \
     libtinyxml \
     libtinyxml2 \
     libqdMetaData \
@@ -174,7 +173,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor \
     vendor.qti.hardware.memtrack-service \
-    vendor.display.config@2.0.vendor
+    vendor.display.config@2.0.vendor \
+    hwcomposer.qcom
 
 # SamsungDAP
 PRODUCT_PACKAGES += \
