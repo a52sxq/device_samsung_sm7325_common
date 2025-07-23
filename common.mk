@@ -31,7 +31,13 @@ PRODUCT_TARGET_VNDK_VERSION := 30
 AB_OTA_UPDATER := false
 
 # Setup dalvik vm configs
-$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+PRODUCT_VENDOR_PROPERTIES += \
+    dalvik.vm.heapstartsize?=16m \
+    dalvik.vm.heapgrowthlimit?=384m \
+    dalvik.vm.heapsize?=512m \
+    dalvik.vm.heaptargetutilization?=0.75 \
+    dalvik.vm.heapminfree?=512k \
+    dalvik.vm.heapmaxfree?=8m
 
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := false
