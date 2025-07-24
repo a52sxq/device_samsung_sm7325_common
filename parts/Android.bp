@@ -1,0 +1,22 @@
+//
+// Copyright (C) 2024 The Pixel Experience Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_app {
+    name: "SamsungParts",
+
+    srcs: ["src/**/*.java"],
+
+    certificate: "platform",
+    platform_apis: true,
+    system_ext_specific: true,
+
+    static_libs: [
+        "SettingsLib",
+        "androidx.window.extensions",
+        "androidx.window.sidecar",
+        "org.lineageos.settings.resources"
+    ],
+}
