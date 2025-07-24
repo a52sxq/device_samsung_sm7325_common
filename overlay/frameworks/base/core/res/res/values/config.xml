@@ -1384,6 +1384,7 @@
         <item>"/system/framework/oat/arm64/services.odex"</item>
         <item>"/system/framework/arm64/boot.oat"</item>
         <item>"/system/framework/arm64/boot-core-libart.oat"</item>
+        <item>"/vendor/lib64/egl/libGLESv2_adreno.so"</item>
     </string-array>
 
 </resources>
