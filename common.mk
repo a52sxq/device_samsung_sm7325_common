@@ -143,6 +143,10 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # A list of dpis to select prebuilt apk, in precedence order.
 PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
 
+# Device-specific settings
+PRODUCT_PACKAGES += \
+    SamsungParts
+
 # Display
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.composer-service \
@@ -163,10 +167,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service \
     vendor.display.config@2.0.vendor \
     AdvancedDisplay
-
-# Doze
-PRODUCT_PACKAGES += \
-    SamsungDoze
 
 # DRM
 PRODUCT_PACKAGES += \
