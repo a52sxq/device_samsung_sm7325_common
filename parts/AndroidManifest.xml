@@ -30,6 +30,21 @@
         </service>
 
         <activity
+            android:name=".display.AdvancedDisplayActivity"
+            android:label="@string/advanced_display_title"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.display" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:value="@string/summary_empty" />
+        </activity>
+
+        <activity
             android:name=".doze.SamsungDozeActivity"
             android:label="@string/ambient_display_title"
             android:theme="@style/Theme.SubSettingsBase"
