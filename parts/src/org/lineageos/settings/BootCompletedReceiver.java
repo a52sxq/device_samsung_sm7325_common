@@ -21,6 +21,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
+import org.lineageos.settings.display.mDNIeAccessibility;
+import org.lineageos.settings.display.mDNIeScenario;
 import org.lineageos.settings.doze.DozeUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
@@ -32,6 +34,8 @@ public class BootCompletedReceiver extends BroadcastReceiver {
     public void onReceive(final Context context, Intent intent) {
         if (DEBUG) Log.d(TAG, "Received boot completed intent");
         DozeUtils.checkDozeService(context);
+        mDNIeAccessibility.restore(context);
+        mDNIeScenario.restore(context);
     }
 
 }
