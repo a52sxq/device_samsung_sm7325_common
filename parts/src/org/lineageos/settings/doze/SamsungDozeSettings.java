@@ -30,7 +30,7 @@ import androidx.preference.SwitchPreference;
 import com.android.settingslib.widget.MainSwitchPreference;
 
 import org.lineageos.settings.R;
-import org.lineageos.internal.util.ScreenType;
+import org.lineageos.settings.utils.ScreenTypeUtils;
 
 public class SamsungDozeSettings extends PreferenceFragment
         implements OnPreferenceChangeListener, OnCheckedChangeListener {
@@ -92,7 +92,7 @@ public class SamsungDozeSettings extends PreferenceFragment
         super.onResume();
 
         // If running on a phone, remove padding around the listview
-        if (!ScreenType.isTablet(getContext())) {
+        if (!ScreenTypeUtils.isTablet(getContext())) {
             getListView().setPadding(0, 0, 0, 0);
         }
     }
