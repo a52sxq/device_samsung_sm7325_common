@@ -53,7 +53,7 @@ public final class DozeUtils {
                 UserHandle.CURRENT);
     }
 
-    protected static void checkDozeService(Context context) {
+    public static void checkDozeService(Context context) {
         if (!isAlwaysOnEnabled(context) &&
                 isDozeEnabled(context) && isAnyGestureEnabled(context)) {
             startService(context);
