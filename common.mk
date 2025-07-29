@@ -349,6 +349,8 @@ PRODUCT_PLATFORM := lahaina
 TARGET_BOARD_PLATFORM := lahaina
 
 # Power
+TARGET_PROVIDES_POWERHAL := true
+
 PRODUCT_PACKAGES += \
     android.hardware.power-service.pixel-libperfmgr \
     android.hardware.power@1.2.vendor
