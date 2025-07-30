@@ -191,6 +191,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# FastCharge
+PRODUCT_PACKAGES += \
+    FastCharge
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.samsung
@@ -290,6 +294,8 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_PACKAGES += \
+    FastChargeA52sxq
 
 # Perf
 PRODUCT_PACKAGES += \
