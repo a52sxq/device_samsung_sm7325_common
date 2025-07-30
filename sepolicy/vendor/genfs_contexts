@@ -86,7 +86,6 @@ genfscon sysfs /devices/virtual/sec/tsp/cmd                                     
 genfscon sysfs /devices/virtual/sec/tsp/prox_power_off                                                      u:object_r:sysfs_touchscreen_writable:s0
 genfscon sysfs /devices/virtual/sec/tsp/input/enabled                                                       u:object_r:sysfs_touchscreen_writable:s0
 genfscon sysfs /devices/virtual/sec/switch                                                                  u:object_r:sysfs_sec_switch:s0
-genfscon sysfs /devices/virtual/sec/switch/afc_disable                                                      u:object_r:sysfs_sec_switch_writable:s0
 genfscon sysfs /devices/virtual/camera/                                                                     u:object_r:sysfs_camera:s0
 genfscon sysfs /devices/virtual/camera/rear/ssrm_camera_info                                                u:object_r:sysfs_camera_writable:s0
 genfscon sysfs /devices/virtual/camera/flash/rear_flash                                                     u:object_r:sysfs_camera_writable:s0
@@ -101,3 +100,6 @@ genfscon sysfs /power/                                                          
 genfscon sysfs /wifi                                                                                        u:object_r:sysfs_wifi:s0
 genfscon sysfs /wifi/mac_addr                                                                               u:object_r:sysfs_wifi_writable:s0
 genfscon sysfs /wifi/memdump                                                                                u:object_r:sysfs_wifi_writable:s0
+
+# FastCharge
+genfscon sysfs /class/sec/switch/afc_disable                                                       u:object_r:sysfs_fastcharge:s0

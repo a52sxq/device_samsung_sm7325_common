@@ -20,3 +20,8 @@ binder_call(system_app, hal_wifi_supplicant_default)
 binder_call(system_app, vold)
 
 dontaudit system_app vendor_default_prop:file { getattr open read map };
+
+# FastCharge
+allow system_app sysfs_fastcharge:file rw_file_perms;
+allow system_app sysfs_sec_switch:dir search;
+allow system_app sysfs_sec_switch_writable:file rw_file_perms;
