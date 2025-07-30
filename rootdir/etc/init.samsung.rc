@@ -44,6 +44,10 @@ on init
     symlink /dev/block/bootdevice/by-name/steady  /dev/block/steady
     symlink /dev/block/bootdevice/by-name/persistent  /dev/block/persistent
 
+    # Allow system to manipulate Fast Charge node
+    chown system system /sys/class/sec/switch/afc_disable
+    chmod 0660 /sys/class/sec/switch/afc_disable
+
     # System Performance HyPer Permission
     chmod 0440 /sys/kernel/gpu/gpu_freq_table
     chmod 0660 /sys/kernel/gpu/gpu_max_clock
