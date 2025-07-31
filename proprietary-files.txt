@@ -477,29 +477,12 @@ product/priv-app/HotwordEnrollmentXGoogleEx3HEXAGON/HotwordEnrollmentXGoogleEx3H
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
-# IOP
-vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
-vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc
-vendor/lib/libqti-iopd.so
-vendor/lib/vendor.qti.hardware.iop@1.0.so
-vendor/lib/vendor.qti.hardware.iop@2.0.so
-vendor/lib/libqti-iopd-client.so
-vendor/lib64/libqti-iopd.so
-vendor/lib64/vendor.qti.hardware.iop@1.0.so
-vendor/lib64/vendor.qti.hardware.iop@2.0.so
-vendor/lib64/libqti-iopd-client.so
-
 # IPA
 vendor/etc/init/ipa_fws.rc
 
 # Keymaster
 vendor/lib64/libkeymaster_helper.so
 vendor/lib64/libskeymaster4device.so|de98a294927f45b84e41b88a2145c7771377715c
-
-# Machine learning
-vendor/lib64/libreffeature.so
-vendor/lib64/liblearningmodule.so
-vendor/lib64/libmeters.so
 
 # Media
 vendor/bin/hw/vendor.qti.media.c2@1.0-service
@@ -527,30 +510,12 @@ vendor/lib/libqcodec2_v4l2codec.so
 vendor/lib64/libqcodec2_v4l2codec.so
 
 # Perf
-vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
-vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
-vendor/lib/libperfconfig.so
-vendor/lib/libperfgluelayer.so
 vendor/lib/libqti-perfd-client.so
-vendor/lib/libqti-perfd.so
-vendor/lib/libperfioctl.so
-vendor/lib/libqti-util.so
 vendor/lib/vendor.qti.memory.pasrmanager@1.0.so
 vendor/lib/vendor.qti.memory.pasrmanager@1.1.so
-vendor/lib64/libperfconfig.so
-vendor/lib64/libperfgluelayer.so
 vendor/lib64/libqti-perfd-client.so
-vendor/lib64/libqti-perfd.so
-vendor/lib64/libperfioctl.so
-vendor/lib64/libqti-util.so
 vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so
 vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so
-vendor/etc/perf/targetresourceconfigs.xml
-vendor/etc/perf/perfconfigstore.xml
-vendor/etc/perf/commonresourceconfigs.xml
-vendor/etc/perf/commonsysnodesconfigs.xml
-vendor/etc/perf/perfboostsconfig.xml
-vendor/etc/perf/targetconfig.xml
 vendor/etc/msm_irqbalance.conf
 
 # Peripheral
