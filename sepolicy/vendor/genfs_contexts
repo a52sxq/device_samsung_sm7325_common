@@ -12,6 +12,7 @@ genfscon sysfs /kernel/boot_wlan/                                               
 
 genfscon sysfs /devices/virtual/tas25xx/                                                                    u:object_r:sysfs_audio_writable:s0
 genfscon sysfs /class/cirrus/                                                                               u:object_r:sysfs_audio_writable:s0
+genfscon sysfs /devices/virtual/mdnie                                                                       u:object_r:sysfs_mdnie_writable:s0
 
 genfscon sysfs /devices/virtual/input/                                                                      u:object_r:sysfs_input:s0
 genfscon sysfs /devices/platform/soc/a84000.i2c/i2c-23/23-0049/input/                                       u:object_r:sysfs_power_writable:s0
